@@ -16,7 +16,7 @@ public class Main {
         RoundPeg roundPeg = new RoundPeg(5);
         System.out.println("roundPeg fits  in roundHole: " + roundHole.fits(roundPeg));
 
-        /// треугольный колышек помещается в треугольное отверстие
+        /// треугольный колышек помещается в квадратное отверстие
         SquareHole squareHole = new SquareHole(5);
         SquarePeg squarePeg = new SquarePeg(5);
         System.out.println("squarePeg fits in squareHole: " + squareHole.fits(squarePeg));
@@ -29,7 +29,7 @@ public class Main {
 
 
         // надстройки в виде адаптеров
-        // круглый колышек помещается в треугольное отверстие
+        // круглый колышек помещается в квадратное отверстие
         RoundToSquarePegAdapter roundToSquarePegAdapter = new RoundToSquarePegAdapter(roundPeg);
         System.out.println("roundToSquarePegAdapter fits in squareHole: " + squareHole.fits(roundToSquarePegAdapter));
 
